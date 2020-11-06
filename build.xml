@@ -13,22 +13,17 @@
     
     <fileset dir="${Files}" casesensitive="yes">
       <include name="**/*.xml"/>
-       
-    <!--  <exclude name="**/*.properties"/> -->
+    </fileset>
       
-       </fileset>
       </path>
+    
     <sequential>
     <ant antfile="@{File}"/>
+    </sequential>
     
-      </sequential>
   </for>
-  <echo>"${File}"</echo>
-</target>
-<!--
-<target name="execute" >
-  <ant antfile="${File}"/>
+  
   
 </target>
--->
+
 </project>
