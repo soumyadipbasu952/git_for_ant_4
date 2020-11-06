@@ -1,0 +1,30 @@
+<project name="testing" default="Activate">
+ 
+<property file="FTP_POLL.properties"/>
+
+
+<target name="Import">
+<exec executable="curl">
+
+<arg line="curl -X POST -u soumyadip.basu@lntinfotech.com:Soumya@89610 -H Accept:application/json -F file=@${IAR_Location} -F type=application/octet-stream https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/archive"/>
+</exec>
+</target>
+
+<target name="Activate" depends="Import">
+<exec executable="curl">
+ <arg line = "curl -X POST -u soumyadip.basu@lntinfotech.com:Soumya@89610 -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_Name_Activation}"
+/>
+</exec>
+</target>
+
+<!--
+<target name="UpdateConnection" depends="Import">
+<exec executable="curl">
+ <arg line = "curl -X POST -u soumyadip.basu@lntinfotech.com:Soumya@89610 -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location_Connection} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_Name_Activation}
+"
+/>
+</exec>
+</target>
+-->
+
+</project>
