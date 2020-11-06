@@ -23,7 +23,7 @@
     
       </sequential>
   </for>
-  <echo>${File}</echo>
+  <echo>"${File}"</echo>
 </target>
 <!--
 <target name="execute" >
