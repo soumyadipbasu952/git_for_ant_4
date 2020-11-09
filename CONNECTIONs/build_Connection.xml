@@ -1,6 +1,6 @@
 <project name="connection" default="REST_TRIGGER">
 
-<property file="C:\Users\Soumyadip\Desktop\CONNECTIONs\Connection_Properties.properties"/>
+<property file="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJob_Connection_config_4\CONNECTIONs\Connection_Properties.properties"/>
 
 <target name="REST_TRIGGER" depends="REST_TRIGGER_INVOKE" >
 
