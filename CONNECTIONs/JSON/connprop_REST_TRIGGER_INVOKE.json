@@ -1,0 +1,35 @@
+{
+   "connectionProperties": [
+   {     
+      "propertyName": "connectionType",  
+     
+      "propertyValue": "oracleMDCatalogUrl"
+   },
+   {     
+      "propertyName": "tlsVersion",  
+     
+      "propertyValue": "TLSv1.1"
+   },
+   {     
+      "propertyName": "connectionUrl",  
+     
+      "propertyValue": "https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com:443/ic/api/integration/v1/flows/rest/SPLIT_NAME_SERVICE/1.0/metadata/openapi"
+   }],
+ 
+   "securityProperties":  [{
+         
+       "propertyName": "username",
+          
+          
+            "propertyValue": "soumyadip.basu@lntinfotech.com"
+   },
+   {
+        
+     
+            "propertyName": "password",
+          
+          
+            "propertyValue": "Soumya@89610"
+         
+   }]
+}

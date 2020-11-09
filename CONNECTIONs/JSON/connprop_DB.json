@@ -1,0 +1,28 @@
+{
+   "connectionProperties": [
+   {     
+		"propertyName": "Host",  
+		"propertyValue": "127.0.0.1"
+   },
+   {     
+		"propertyName": "Port",  
+		"propertyValue": "1521"
+   },
+   {     
+		"propertyName": "ServiceName",  
+		"propertyValue": "xe"
+   }
+   ],
+ "securityProperties":  [
+ {
+		"propertyName": "username",
+        "propertyValue": "ON_PREM_USER"
+   },
+   {
+        "propertyName": "password",
+        "propertyValue": "welcome1"
+         
+   }
+   ]
+}
+{"status": "CONFIGURED"}

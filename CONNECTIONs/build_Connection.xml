@@ -1,0 +1,34 @@
+<project name="connection" default="SOAP">
+
+<property file="C:\Users\Soumyadip\Desktop\CONNECTIONs\Connection_Properties.properties">
+
+<target name="REST_TRIGGER"/>
+
+<exec executable="curl">
+<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${REST_TRIGGER_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${REST_TRIGGER}"/>
+</target>
+
+<target name="REST_TRIGGER_INVOKE" depends="REST_TRIGGER"/>
+
+<exec executable="curl">
+<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${REST_TRIGGER_INVOKE_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${REST_TRIGGER_INVOKE}"/>
+</target>
+
+<target name="FTP" depends="REST_TRIGGER_INVOKE"/>
+
+<exec executable="curl">
+<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${FTP_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${FTP}"/>
+</target>
+
+<target name="DB" depends="FTP"/>
+
+<exec executable="curl">
+<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${DB_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${DB}"/>
+</target>
+
+<target name="SOAP" depends="DB"/>
+
+<exec executable="curl">
+<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${SOAP_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${SOAP}"/>
+</target>
+

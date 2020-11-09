@@ -1,0 +1,30 @@
+
+
+{"connectionProperties": [
+        {
+            "propertyName": "Host",
+			"propertyValue": "192.29.169.81"
+        },
+        {
+            "propertyName": "Port",
+            "propertyValue": "5026"
+        },
+		{
+			"propertyName": "UseSftp",
+			"propertyValue": "true"
+		}
+		],
+		"securityProperties": [
+        {
+			"propertyName": "username",
+            "propertyValue": "soumyadip.basu@lntinfotech.com"
+        },
+        {
+            "propertyName": "password",
+            "propertyValue": "Soumya@89610"
+        }
+		]
+}
+		
+		{"status": "CONFIGURED"}
+		

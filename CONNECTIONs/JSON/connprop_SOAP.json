@@ -1,0 +1,20 @@
+{
+   "connectionProperties": [
+   {     
+		"propertyName": "targetWSDLURL",  
+		"propertyValue": "https://fa-epvg-test-saasfaprod1.fa.ocs.oraclecloud.com:443/xmlpserver/services/ExternalReportWSSService?wsdl"
+   }
+   ],
+	"securityProperties":  [
+	{
+         "propertyName": "username",
+         "propertyValue": "Trainee User"
+   },
+   {
+        "propertyName": "password",
+        "propertyValue": "Newuser#000"
+         
+   }
+   ]
+}
+{"status": "CONFIGURED"}
