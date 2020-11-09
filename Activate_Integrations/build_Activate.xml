@@ -1,0 +1,41 @@
+<project name="Activate" default="ACTIVATE_CALCULATOR">
+
+
+<property file="C:\Users\Soumyadip\Desktop\ACTIVATE\Connectivity.properties"/>
+
+<target name="ACTIVATE_CALCULATOR" depends="ACTIVATE_FTP">
+<exec executable="curl">
+ <arg line = "curl -X POST -u ${USERNAME_PASSWORD} -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_1}"
+/>
+</exec>
+</target>
+
+<target name="ACTIVATE_FTP" depends="ACTIVATE_REST_TRIGGER_DEMO">
+<exec executable="curl">
+ <arg line = "curl -X POST -u ${USERNAME_PASSWORD} -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_2}"
+/>
+</exec>
+</target>
+
+<target name="ACTIVATE_REST_TRIGGER_DEMO" depends="ACTIVATE_DATABASE_DEMO_AD">
+<exec executable="curl">
+ <arg line = "curl -X POST -u ${USERNAME_PASSWORD} -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_3}"
+/>
+</exec>
+</target>
+
+<target name="ACTIVATE_DATABASE_DEMO_AD" depends="ACTIVATE_UPDATE_DFF_EINVOICE_AD">
+<exec executable="curl">
+ <arg line = "curl -X POST -u ${USERNAME_PASSWORD} -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_4}"
+/>
+</exec>
+</target>
+
+<target name="ACTIVATE_UPDATE_DFF_EINVOICE_AD">
+<exec executable="curl">
+ <arg line = "curl -X POST -u ${USERNAME_PASSWORD} -H Content-Type:application/json -H X-HTTP-Method-Override:PATCH -d @${JSON_Location} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/integrations/${IAR_5}"
+/>
+</exec>
+</target>
+
+</project>
