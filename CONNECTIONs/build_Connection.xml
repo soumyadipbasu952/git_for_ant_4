@@ -32,3 +32,5 @@
 <arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${SOAP_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${SOAP}"/></exec>
 </target>
 
+</project>
+
