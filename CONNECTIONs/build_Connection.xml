@@ -5,30 +5,30 @@
 <target name="REST_TRIGGER"/>
 
 <exec executable="curl">
-<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${REST_TRIGGER_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${REST_TRIGGER}"/>
+<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${REST_TRIGGER_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${REST_TRIGGER}"/></exec>
 </target>
 
 <target name="REST_TRIGGER_INVOKE" depends="REST_TRIGGER"/>
 
 <exec executable="curl">
-<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${REST_TRIGGER_INVOKE_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${REST_TRIGGER_INVOKE}"/>
+<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${REST_TRIGGER_INVOKE_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${REST_TRIGGER_INVOKE}"/></exec>
 </target>
 
 <target name="FTP" depends="REST_TRIGGER_INVOKE"/>
 
 <exec executable="curl">
-<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${FTP_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${FTP}"/>
+<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${FTP_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${FTP}"/></exec>
 </target>
 
 <target name="DB" depends="FTP"/>
 
 <exec executable="curl">
-<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${DB_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${DB}"/>
+<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${DB_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${DB}"/></exec>
 </target>
 
 <target name="SOAP" depends="DB"/>
 
 <exec executable="curl">
-<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${SOAP_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${SOAP}"/>
+<arg line="curl -X POST -u ${USERNAME_PASSWORD} -H X-HTTP-Method-Override:PATCH -H Content-Type:application/json -d @${SOAP_PATH} https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/connections/${SOAP}"/></exec>
 </target>
 
