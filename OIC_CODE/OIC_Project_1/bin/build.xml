@@ -1,4 +1,4 @@
-<project name="testing">
+<project name="testing" default="Import">
 
 <property file="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport_4\OIC_CODE\OIC_Project_1\bin\Calculator.properties"/>
  
