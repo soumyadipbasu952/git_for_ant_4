@@ -1,4 +1,4 @@
-<project name="testing" default="Activate">
+<project name="testing">
 
 <property file="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport_4\OIC_CODE\OIC_Project_4\bin\DATABASE_DEMO_AD.properties"/>
  
