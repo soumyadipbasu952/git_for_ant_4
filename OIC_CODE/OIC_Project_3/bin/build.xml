@@ -1,4 +1,4 @@
-<project name="testing" default="Activate">
+<project name="testing">
 
 <property file="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport_4\OIC_CODE\OIC_Project_3\bin\REST_TRIGGER_DEMO.properties"/>
  
