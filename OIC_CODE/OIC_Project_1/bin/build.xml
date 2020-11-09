@@ -9,6 +9,7 @@
 </exec>
 </target>
 
+ <!--
 
 <target name="Activate" depends="Import">
 <exec executable="curl">
@@ -16,7 +17,7 @@
 />
 </exec>
 </target>
- 
+ -->
  <!--
 
 <target name="UpdateConnection" depends="Import">
