@@ -1,5 +1,7 @@
 <project name="Package_Import" default="Import">
-
+  
+<property file=build.properties/>
+  
 <target name="Import">
 <exec executable="curl">
 
