@@ -1,0 +1,10 @@
+<project name="Package_Import" default="Import">
+
+<target name="Import">
+<exec executable="curl">
+
+<arg line="
+curl -X POST -u ${USERNAME_PASSWORD} -F file=@C:\Users\Soumyadip\Downloads\INTEGRATIONS_SB.par -F type=application/octet-stream https://oicintegrationinstance-bmcg1bx14wqj-bo.integration.ocp.oraclecloud.com/ic/api/integration/v1/packages/archive"/>
+</exec>
+</target>
+</project>
