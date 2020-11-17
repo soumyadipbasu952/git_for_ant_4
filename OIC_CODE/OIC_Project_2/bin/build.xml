@@ -1,6 +1,6 @@
 <project name="testing" default="Import">
  
-<property file="FTP_POLL.properties"/>
+<property file="OIC_CODE/OIC_Project_2/bin/build.properties"/>
 
 
 <target name="Import">
