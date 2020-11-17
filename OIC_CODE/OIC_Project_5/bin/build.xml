@@ -1,6 +1,6 @@
 <project name="testing" default="Import">
 
-<property file="UPDATE_DFF_EINVOICE_AD.properties"/>
+<property file="OIC_CODE/OIC_Project_5/bin/build.properties"/>
  
 <target name="Import">
 <exec executable="curl">
