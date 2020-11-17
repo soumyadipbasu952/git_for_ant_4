@@ -1,6 +1,6 @@
 <project name="testing" default="Import">
  
-<property file="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport_4\OIC_CODE\OIC_Project_2\bin\FTP_POLL.properties"/>
+<property file="FTP_POLL.properties"/>
 
 
 <target name="Import">
