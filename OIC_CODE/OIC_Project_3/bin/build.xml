@@ -1,6 +1,6 @@
 <project name="testing" default="Import">
 
-<property file="REST_TRIGGER_DEMO.properties"/>
+<property file="OIC_CODE/OIC_Project_3/bin/build.properties"/>
  
 <target name="Import">
 <exec executable="curl">
