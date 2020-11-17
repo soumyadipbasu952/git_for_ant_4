@@ -1,6 +1,6 @@
 <project name="testing" default="Import">
 
-<property file="DATABASE_DEMO_AD.properties"/>
+<property file="OIC_CODE/OIC_Project_4/bin/build.properties"/>
  
 <target name="Import">
 <exec executable="curl">
