@@ -1,6 +1,6 @@
 <project name="testing" default="Import">
 
-<property file="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport_4\OIC_CODE\OIC_Project_5\bin\UPDATE_DFF_EINVOICE_AD.properties"/>
+<property file="UPDATE_DFF_EINVOICE_AD.properties"/>
  
 <target name="Import">
 <exec executable="curl">
