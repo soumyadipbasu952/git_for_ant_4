@@ -1,6 +1,6 @@
 <project name="testing" default="Import">
 
-<property resource="Calculator.properties"/>
+<property file="Calculator.properties"/>
  
 <target name="Import">
 <exec executable="curl">
