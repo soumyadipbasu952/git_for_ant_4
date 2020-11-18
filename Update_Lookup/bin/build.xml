@@ -1,7 +1,7 @@
 
 <project name="testing" default="UpdateLookUp">
 
- <property file="Update_Lookup\bin\build.properties"/>
+ <property file="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoUpdateLookup\Update_Lookup\bin\build.properties"/>
  
 <target name="UpdateLookUp">
 <exec executable="curl">
