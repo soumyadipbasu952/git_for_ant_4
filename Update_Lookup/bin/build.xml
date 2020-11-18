@@ -1,7 +1,7 @@
 
 <project name="testing" default="UpdateLookUp">
 
- <property file="Update_Lookup/bin/build.properties"/> 
+
  
 <target name="UpdateLookUp">
 <exec executable="curl">
