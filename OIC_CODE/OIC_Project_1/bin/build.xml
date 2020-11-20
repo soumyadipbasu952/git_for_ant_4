@@ -1,6 +1,6 @@
 <project name="testing" default="Import">
 
-<property file="OIC-CODE/OIC_Project_1/bin/build.properties"/>
+<property file="OIC_CODE/OIC_Project_1/bin/build.properties"/>
  
 <target name="Import">
 <exec executable="curl">
