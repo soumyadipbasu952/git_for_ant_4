@@ -6,7 +6,7 @@
 
 <target name="Builds">
 
-<property name="Files" value="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport_4\OIC_CODE"/>
+<property name="Files" value="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\Job_Import\OIC_CODE"/>
   <for param="File" keepgoing="true">
     
     <path>
