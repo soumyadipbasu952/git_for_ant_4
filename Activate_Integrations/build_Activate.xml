@@ -1,7 +1,7 @@
 <project name="Activate" default="ACTIVATE_CALCULATOR">
 
 
-<property file="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoActivate_4\Activate_Integrations\Connectivity.properties"/>
+<property file="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\Job_Activate\Activate_Integrations\Connectivity.properties"/>
 
 <target name="ACTIVATE_CALCULATOR" depends="ACTIVATE_FTP">
 <exec executable="curl">
